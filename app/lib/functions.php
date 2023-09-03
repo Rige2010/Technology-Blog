@@ -12,7 +12,7 @@ function logout(): void
 }
 
 // Cheking the correct page
-function check_correct_page($count_pages)
+function check_correct_page($count_pages): int|string
 {
     if (empty($_GET["page"]) || $_GET["page"] < 1 || $_GET["page"] > $count_pages) {
         return  1;
